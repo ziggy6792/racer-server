@@ -16,19 +16,19 @@
     "prettify:staged": "npx prettier --write",
     "lint": "npx eslint --fix ./src/**/*.*",
     "lint:staged": "npx eslint --fix",
-    "prebuild": "npm run clean",
+    "prebuild:old": "npm run clean",
     "build": "npx ttsc --p ./tsconfig.json",
-    "postbuild": "npx ts-node ./script/build.ts",
+    "postbuild:old": "npx ts-node ./script/build.ts",
     "test": "jest",
     "test:staged": "jest --bail --findRelatedTests",
     "prestart": "npm install --only=prod",
     "start": "npx cross-env NODE_ENV=\"production\" node app.js",
+    "start:new": "node build/app.js",
     "prestart:prod": "cd build && npm install --only=prod",
     "start:prod": "cd build && npx cross-env NODE_ENV=\"production\" node app.js",
     "start:dev": "npx ts-node-dev --prefer-ts true --no-notify -r tsconfig-paths/register --watch src --transpileOnly src/app.ts"
   },
   "author": "Carlo Corradini",
- 
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
