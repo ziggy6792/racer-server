@@ -28,10 +28,7 @@
     "start:dev": "npx ts-node-dev --prefer-ts true --no-notify -r tsconfig-paths/register --watch src --transpileOnly src/app.ts"
   },
   "author": "Carlo Corradini",
-  "engines": {
-    "node": "^10.16.0",
-    "npm": "^6.9.0"
-  },
+ 
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
