@@ -7,12 +7,12 @@
     "url": "https://github.com/carlocorradini/racer-server/issues",
     "email": "carlo.corradini@studenti.unitn.it"
   },
-  "main": "./build/app.js",
+  "main": "./dist/app.js",
   "private": true,
   "scripts": {
     "update": "npx ncu -u && npm install",
     "build": "npx ttsc --p ./tsconfig.json",
-    "start": "node build/app.js"
+    "start": "node dist/app.js"
   },
   "author": "Carlo Corradini",
   "license": "MIT",
